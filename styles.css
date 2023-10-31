@@ -14,7 +14,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 1em;
 }
 
 h1{
@@ -23,13 +23,13 @@ h1{
 }
 
 .header-img{
-  width: 200px
+  width: 10em;
 }
 
 .box{
   background: white;
-  width: 200px;
-  height: 200px;
+  width: 10em;
+  height: 10em;
   color: #394880;
   display: flex;
   align-items: center;
@@ -39,31 +39,31 @@ h1{
 /* I used the grid-template-columns CSS property for this challenge, in past projects I used the flex-wrap  property to create grids. However, becasue this grid had specific dimensions (2x2) I found the grid-template-columns property to be easier to work with for this challenge and I liked how much direct control it gave me over how I displayed the boxes. */
 .boxes{
   display: grid;
-  grid-template-columns: 200px 200px;
-  gap: 10px;
+  grid-template-columns: 10em 10em;
+  gap: 0.5em;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 500px){
   .boxes{
-    grid-template-columns: 200px;
+    grid-template-columns: 10em;
   }
 }
 
-/* This secondary media query may be unneeded becasue no phone screens are this narrow. However I still created it to demo how I would handle needing multiple media queries and to handle the edge case of a user making a very narrow window on a desktop. Now the page's elements are all fully visible with only a vertical scroll down to a screen width of 120px. */
+/* This secondary media query may be unneeded becasue no phone screens are this narrow. However I still created it to demo how I would handle needing multiple media queries and to handle the edge case of a user making a very narrow window on a desktop. Now the page's elements are all fully visible with only a vertical scroll down to a screen width of 100px. */
 @media screen and (max-width: 230px){
   h1{
-    font-size: 20px;
+    font-size: 1em;
   }
 
   .header-img{
-    width: 100px
+    width: 5em;
   }
   
   .box{
-    width: 100px;
-    height: 100px;
+    width: 5em;
+    height: 5em;
   }
   .boxes{
-    grid-template-columns: 100px;
+    grid-template-columns: 5em;
   }
 }
