@@ -10,14 +10,14 @@ body{
   background: #394880;
 }
 
-header{
+.page-header{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1em;
 }
 
-h1{
+.title{
   text-align: center;
   color: white;
 }
@@ -51,7 +51,7 @@ h1{
 
 /* This secondary media query may be unneeded becasue no phone screens are this narrow. However I still created it to demo how I would handle needing multiple media queries and to handle the edge case of a user making a very narrow window on a desktop. Now the page's elements are all fully visible with only a vertical scroll down to a screen width of 100px. */
 @media screen and (max-width: 230px){
-  h1{
+  .title{
     font-size: 1em;
   }
 
