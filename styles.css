@@ -4,17 +4,20 @@ body{
   align-items: center;
 }
 
+h1{
+  text-align: center;
+}
+
 .box{
   border: 2px solid blue;
-  width: 35vh;
-  height: 35vh;
+  width: 200px;
+  height: 200px;
   text-align: center;
 }
 
 .boxes{
-  width: 72vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1vh;
+  grid-template-columns: 200px 200px;
+  gap: 10px;
   border: green solid 2px;
 }
