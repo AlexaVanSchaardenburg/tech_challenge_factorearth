@@ -1,29 +1,69 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: #394880;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 
 h1{
   text-align: center;
+  color: white;
+}
+
+.header-img{
+  width: 200px
 }
 
 .box{
-  border: 2px solid blue;
+  background: white;
   width: 200px;
   height: 200px;
-  text-align: center;
+  color: #394880;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* this was the first time I used the grid-template-columns CSS property, in past projects I used the flex-wrap  property to create grids, however, becasue this grid had specific dimensions (2x2) I found the rid-template-columns property to be easier to wrok with and I liked how much direct control it gave me over how I displayed the boxes. */
 .boxes{
   display: grid;
   grid-template-columns: 200px 200px;
   gap: 10px;
-  border: green solid 2px;
 }
 
 @media screen and (max-width: 800px){
   .boxes{
     grid-template-columns: 200px;
+  }
+}
+
+/* this secondary media query may be unneeded becasue no phone screens are this narrow. However I still created it to demo how I would handle needing multiple media queries and to handle the edge case of a user making a very narrow window on a desktop. Now the page's elements are all fully visible with only a vertical scroll down to a screen width of 120px. */
+@media screen and (max-width: 230px){
+  h1{
+    font-size: 20px;
+  }
+
+  .header-img{
+    width: 100px
+  }
+  
+  .box{
+    width: 100px;
+    height: 100px;
+  }
+  .boxes{
+    grid-template-columns: 100px;
   }
 }
