@@ -21,3 +21,9 @@ h1{
   gap: 10px;
   border: green solid 2px;
 }
+
+@media screen and (max-width: 800px){
+  .boxes{
+    grid-template-columns: 200px;
+  }
+}
