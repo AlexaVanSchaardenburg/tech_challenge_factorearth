@@ -16,11 +16,11 @@ In order to complete this challenge, I took the following steps:
 5. Created a README to document what I did and added inline comments explaining the decisions I made in the code.
 
 ## The 'Why' Behind My Decisions
-- Why media queries
-  I chose to use media queries primarily because they give me the most control over exactly what a page looks like at specific screen widths. Another way I could have accomplished this task is by using the flex-wrap property in CSS. This would have required setting a max width to the parent container with the class `class="boxes"`. In my opinion this gives me less direct control over how many columns and rows there are, so I chose to use the grid-template-columns CSS property which allows me to directly specify how many columns there are. 
+Why media queries?
+- I chose to use media queries primarily because they give me the most control over exactly what a page looks like at specific screen widths. Another way I could have accomplished this task is by using the flex-wrap property in CSS. This would have required setting a max width to the parent container with the class `class="boxes"`. In my opinion this gives me less direct control over how many columns and rows there are, so I chose to use the grid-template-columns CSS property which allows me to directly specify how many columns there are. 
   
-- Why I used ems rather than pxs
-  In my experience, ems are a better unit to work in when making a design responsive. When I first learned CSS I worked primarily in pixels, but as I learned to  make design responsive ems became a better unit because it is relative. This means it scales better to other screen sizes and is not as 'set in stone' as px.
+Why I used ems rather than pxs?
+- In my experience, ems are a better unit to work in when making a design responsive. When I first learned CSS I worked primarily in pixels, but as I learned to  make design responsive ems became a better unit because it is relative. This means it scales better to other screen sizes and is not as 'set in stone' as px.
 
 ## Making Sure the Application Works as Anticipated
 I wanted to ensure the grid changed as expected across all screen sizes. In order to test this I manually changed the size of my window on my laptop, and used the Chrome Dev Tools. In the Chrome Dev Tools I used the responsive feature to test across a wide range of screen sizes, down to 100px in width. I also checked the design on all of the sample screen sizes in the Dev Tools. 
