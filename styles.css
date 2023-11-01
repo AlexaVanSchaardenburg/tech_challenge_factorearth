@@ -36,7 +36,7 @@ body{
   justify-content: center;
 }
 
-/* I used the grid-template-columns CSS property for this challenge, in past projects I used the flex-wrap  property to create grids. However, becasue this grid had specific dimensions (2x2) I found the grid-template-columns property to be easier to work with for this challenge and I liked how much direct control it gave me over how I displayed the boxes. */
+/* I used the grid-template-columns CSS property for this challenge, in past projects I used the flex-wrap property to create grids. However, because this grid had specific dimensions (2x2) I found the grid-template-columns property to be easier to work with for this challenge and I liked how much direct control it gave me over how I displayed the boxes. */
 .boxes{
   display: grid;
   grid-template-columns: 10em 10em;
@@ -49,7 +49,7 @@ body{
   }
 }
 
-/* This secondary media query may be unneeded becasue no phone screens are this narrow. However I still created it to demo how I would handle needing multiple media queries and to handle the edge case of a user making a very narrow window on a desktop. Now the page's elements are all fully visible with only a vertical scroll down to a screen width of 100px. */
+/* This secondary media query may be unneeded because no phone screens are this narrow. However I still created it to demo how I would handle needing multiple media queries and to handle the edge case of a user making a very narrow window on a desktop. Now the page's elements are all fully visible with only a vertical scroll down to a screen width of 100px. */
 @media screen and (max-width: 230px){
   .title{
     font-size: 1em;
