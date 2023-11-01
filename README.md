@@ -5,6 +5,7 @@
 The task is to create a responsive layout using HTML and CSS to display four boxes in a 2x2 grid on larger screens and have them stack in a single column when the screen size is reduced. Using the provided html file, complete this task. 
 
 ## Preview 
+![FE-TechChallenge-Preview](https://github.com/AlexaVanSchaardenburg/tech_challenge_factorearth/assets/125763236/3293eef3-abb0-4580-b547-a2d230d19f05)
 
 ## Process
 In order to complete this challenge, I took the following steps:
